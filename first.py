@@ -373,3 +373,85 @@ test_data = copy.deepcopy(students)
 test_data[0]["marks"][0] = 100
 print(students)
 print(test_data)
+
+
+# Create an empty list and add elements dynamically
+# Take 5 inputs from user and store in a list
+# Print only even numbers from a list
+# Print only odd numbers from a list
+# Find the sum of all elements
+# Find the maximum value
+# Find the minimum value
+# Replace an element with a new value
+# Remove duplicate elements
+# Print elements greater than a given number
+
+
+# Create an empty list and add elements dynamically
+# Take 5 inputs from user and store in a list
+numbers = []
+
+for i in range(5):
+    num = int(input("Enter a numbers :"))
+    numbers.append(num)
+
+# Print only even numbers from a list
+numbers = [2, 4, 6, 8, 10]
+for num in numbers:
+    if num % 2 == 0:
+        print("Even numbers")
+
+# Print only ODD numbers from a list
+numbers = [2, 4, 6, 8, 10, 15, 13, 17]
+for num in numbers:
+    if num % 2 != 0:
+        print("Odd numbers")
+
+
+# numbers = [2, 4, 6, 8, 10]
+# if numbers % 2 == 0:
+#     print("Odd numbers")
+
+total = 0
+
+for i in range(1, 10):
+    total += i
+
+    print("Sum  elements are :", total)
+
+
+list2 = [2, 4, 6, 9, 19, 45]
+
+for i in list2:
+    max(list2)
+
+print(i)
+
+
+list2 = [2, 4, 6, 9, 19, 45]
+
+minimum = min(list2)
+print(minimum)
+
+# Replace an element with a new value
+numb = [12, 45, 60, 90]
+numb[3] = 300
+print(numb)
+
+
+# Remove duplicate elements
+
+# num = [2, 4, 5, 6, 7, 7, 8, 8, 8]
+# for i in num:
+#     list(set(num))
+
+# print(i)
+
+# Print elements greater than a given number
+numbers = [10, 20, 30, 40, 50, 5, 7, 9]
+
+limit = int(input("Enter limit: "))
+
+for num in numbers:
+    if num > limit:
+        print(num)

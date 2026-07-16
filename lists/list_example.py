@@ -446,3 +446,133 @@
 # 13. Check if a specific item exists in a list.
 # 14. Count how many times a number appears in a list.
 # 15. Create an empty list and add 3 elements to it.
+
+
+# 1. Create a list of 10 numbers and print only even numbers.
+
+num = [1, 2, 4, 6, 8, 9, 11, 20]
+
+for n in num:
+    if n % 2 == 0:
+        print("Even numbers are:", n)
+
+
+
+# 2. Take 5 numbers from user input and store them in a list.
+# n1 = int(input("Enter first numbers: "))
+# n2 = int(input("Enter second numbers: "))
+# n3 = int(input("Enter third numbers: "))
+# n4 = int(input("Enter fourth numbers: "))
+# n5 = int(input("Enter fifth numbers: "))
+
+# list_2 = [n1, n2, n3, n4, n5]
+# print("Your list ", list_2)
+
+# 3. Find the largest number in a list without using max().
+# num = [100, 2, 4, 6, 8, 9, 11, 20]
+# largest = num[0]
+
+# for n in num[1:]:
+#     if n > largest:
+#         largest = n
+
+# print(largest)
+
+# # 4. Find the smallest number in a tuple.
+# num = (100, 2, 4, 6, 8, 9, 11, 20)
+
+# smallest = num[0]
+# for n in num[1:]:
+#     if n < smallest:
+#         smallest = n
+
+# print(smallest)
+
+# 5. Remove duplicate items from a list.
+num_1 = [100, 2, 4, 6, 8, 9, 11, 20, 2, 100, 2, 11, 2, 8, 9]
+list_dp = list(set(num_1))
+print(list_dp)
+
+# 6. Count how many times a number appears in a list.
+num_2 = [100, 2, 4, 6, 8, 9, 11, 20, 2, 100, 2, 11, 2, 8, 9]
+print(num_2.count(2))
+
+# # 7. Reverse a string without using slicing.
+# st = ["hey", "hello", "hi", "how"]
+# rv = st.reverse(True)
+# print(rv)
+
+# 8. Check whether a string is palindrome or not.
+
+# def is_palindrome(s):
+#     return s == s[::-3]
+# is_palindrome(3)
+
+
+# 9. Count vowels and consonants in a string.
+
+
+# 10. Sort a list without using sort().
+list_srt = [1, 34, 3, 5, 90, 100]
+sc = set(list_srt)
+print(sc)
+
+
+# 11. Merge two lists into one list.
+
+
+# 12. Print positive numbers from a list.
+
+
+# 13. Print prime numbers between 1 to 100.
+
+
+# 14. Find factorial of a number using function.
+
+
+# 15. Create a function to check odd/even.
+
+
+# 16. Create a calculator using functions.
+
+
+# 17. Find sum of all elements in a list.
+
+
+# 18. Create a dictionary of student names and marks.
+
+
+# 19. Print dictionary keys and values separately.
+
+
+# 20. Find second largest number in a list.
+
+
+# 21. Swap two variables without third variable.
+
+
+# 22. Check Armstrong number.
+
+
+# 23. Generate Fibonacci series.
+
+
+# 24. Count words in a sentence.
+
+
+# 25. Find common elements between two lists.
+
+
+# 26. Convert Celsius to Fahrenheit using function.
+
+
+# 27. Create a login system using username and password.
+
+
+# 28. Store student marks and calculate average.
+
+
+# 29. Create ATM menu using loop and condition.
+
+
+# 30. Create number guessing game in Python.
