@@ -772,69 +772,149 @@
 #
 # 14. Merge two dictionaries into one.
 
-dict1 = {"name": "Nishant", "age": 22, "city": "Kathmandu"}
+# dict1 = {"name": "Nishant", "age": 22, "city": "Kathmandu"}
 
-dict2 = {"name1": "hare", "age1": 30, "city1": "Lalitpur"}
+# dict2 = {"name1": "hare", "age1": 30, "city1": "Lalitpur"}
 
-dict1.update(dict2)
-print(dict1)
+# dict1.update(dict2)
+# print(dict1)
 
-# 15. Sort a dictionary by keys.
-# 16. Sort a dictionary by values.
+# # 15. Sort a dictionary by keys.
+# # 16. Sort a dictionary by values.
 
 
-dxt1 = {
-    "a": 2,
-    "c": 5,
-    "b": 90,
-}
-srted_dct = dict(sorted(dxt1.items()))
-print(srted_dct)
+# dxt1 = {
+#     "a": 2,
+#     "c": 5,
+#     "b": 90,
+# }
+# srted_dct = dict(sorted(dxt1.items()))
+# print(srted_dct)
 
-# 17. Find the highest value in a dictionary.
+# # 17. Find the highest value in a dictionary.
 
-prices  = {
-    "a": 250,
-    "c": 5000,
-    "b": 90,
-}
+# prices = {
+#     "a": 250,
+#     "c": 5000,
+#     "b": 90,
+# }
 
-print(max(prices))
+# print(max(prices))
 # 18. Find the lowest value in a dictionary.
 
-print(min(prices))
+# print(min(prices))
 
 # 19. Create a nested dictionary for student details.
 
 
+# studentDetails = {
+#     "student1": {
+#         "Name": "Nishant",
+#         "Address": "Thiaba",
+#         "Roll no": 14,
+#         "Faculty": "BCA",
+#     },
+#     "student2": {
+#         "Name": "Ishwor",
+#         "Address": "Chapagaun",
+#         "Roll no": 32,
+#         "Faculty": "BCA",
+#     },
+# }
+
+# print(studentDetails)
+
+
 # 20. Write a program to store employee name and salary in dictionary.
 
+# employee = {"Name": "John wick", "Salary": 200000}
 
-# 21. Convert dictionary keys into a list.
+# for values in employee.values():
+#     print(values)
 
 
-# 22. Convert dictionary values into a tuple.
+# # 21. Convert dictionary keys into a list.
 
+# list_c = list(dict(employee))
+# print(list_c)
+
+# # 22. Convert dictionary values into a tuple.
+
+# tuple_c = tuple(dict.values(employee))
+# print(tuple_c)
 
 # 23. Clear all items from a dictionary.
 
+# print(employee.clear())
+
 
 # 24. Copy one dictionary into another.
+dict1 = {
+    "Name": "Ishwor",
+    "Address": "Chapagaun",
+    "Roll no": 32,
+    "Faculty": "BCA",
+}
+dict2 = {
+    "Name": "sujan",
+    "Address": "Lalitpur",
+    "Roll no": 33,
+    "Faculty": "BBM",
+}
+
+print(dict2.copy())
+# x = dict1.copy()
+# print(x)
 
 
 # 25. Create a dictionary using dictionary comprehension.
 
 
 # 26. Create a dictionary of numbers from 1 to 10 with their squares.
+# num = {
+#     "1": 1,
+#     "2": 4,
+#     "3": 9,
+#     "4": 16,
+#     "5": 25,
+#     "6": 36,
+#     "7": 49,
+#     "8": 64,
+#     "9": 81,
+#     "10": 100,
+# }
 
+# print(num)
 
 # 27. Remove duplicate values from a dictionary.
+student = {"a": 10, "b": 20, "c": 10, "d": 30, "e": 20}
+
+nums = {}
+
+for key, value in student.items():
+    if value not in nums.values():
+        nums[key] = value
+
+print(nums)
 
 
 # 28. Count how many times each word appears in a sentence.
 
 
+print(list(dict2.keys()).count("Name"))
+
+
 # 29. Find common keys between two dictionaries.
 
+print(dict1.keys() & dict2.keys())
+
+
+for key in dict1:
+    if key in dict2:
+        print(key)
 
 # 30. Swap keys and values of a dictionary.
+
+my_dict = {"a": 2, "b": 4, "c": 9}
+swapped_dict = {value: key for key, value in my_dict.items()}
+print(swapped_dict)

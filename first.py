@@ -128,31 +128,31 @@ import copy
 
 # # print(a is c)
 
-# marks = 25
+marks = 25
 
-# if marks >= 90 and marks <= 100:
-#     print("A+")
+if marks >= 90 and marks <= 100:
+    print("A+")
 
-# elif marks >= 80 and marks < 90:
-#     print("A")
+elif marks >= 80 and marks < 90:
+    print("A")
 
-# elif marks >= 70 and marks < 80:
-#     print("B+")
+elif marks >= 70 and marks < 80:
+    print("B+")
 
-# elif marks >= 60 and marks < 70:
-#     print("B")
+elif marks >= 60 and marks < 70:
+    print("B")
 
-# elif marks >= 50 and marks < 60:
-#     print("C+")
+elif marks >= 50 and marks < 60:
+    print("C+")
 
-# elif marks >= 40 and marks < 50:
-#     print("D+")
+elif marks >= 40 and marks < 50:
+    print("D+")
 
-# elif marks >= 30 and marks < 40:
-#     print("D")
+elif marks >= 30 and marks < 40:
+    print("D")
 
-# elif marks >= 20 and marks < 30:
-#     print("NG")
+elif marks >= 20 and marks < 30:
+    print("NG")
 
 
 # # Nested if
