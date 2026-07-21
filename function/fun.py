@@ -224,8 +224,6 @@
 
 
 # #  Calculator
-
-
 # def calculator_1():
 
 #     print("Select an Operation :")
@@ -406,6 +404,8 @@
 
 # student managmemet system
 
+import os
+
 students = []
 while True:
     print("Student Management system :")
@@ -417,23 +417,44 @@ while True:
     choice = input("Enter the choice (1/2/3/4) :")
 
     if choice == "1":
+        # try:
+        #     with open("function/student.txt", "a") as stu:
+        #         print(stu.write())
         name = input("Enter student name :")
         students.append(name)
         print("Student addedd succesfully :")
+
+    # except FileNotFoundError as e:
+    #     print("Error ", e)
 
     # else:
     #     print("Infomation are not valid :")
 
     elif choice == "2":
+
+        # try:
+        #     with open("function/student.txt", "r") as stu:
+        #         print(stu.read())
+
         if len(students) == 0:
             print("No students found ")
 
         else:
             print("/n Stuent list")
-            for i in range(len(students)):
-                print(f"{i + 1}. {students[i]}")
+        for i in range(len(students)):
+            print(f"{i + 1}. {students[i]}")
+
+    # except FileNotFoundError as e:
+    #     print("Error ", e)
 
     elif choice == "3":
+
+        # if os.path.exists("function/student.txt"):
+        #     os.remove("function/student.txt")
+
+        # else:
+        #     print("File has been successfully removed")
+
         if len(students) == 0:
             print("No students found ")
         else:
