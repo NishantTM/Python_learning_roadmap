@@ -13,7 +13,6 @@ while True:
     print("5. Exit")
 
     choice = input("Enter the choice (1/2/3/4/5) :")
-
     # Add student
     if choice == "1":
         try:
@@ -128,7 +127,7 @@ while True:
             print("Error deleting file:", e)
 
     elif choice == "5":
-        print("Good bye")
+        print("Good bye see you next time ")
         break
 
     else:
