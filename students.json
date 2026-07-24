@@ -1,0 +1,14 @@
+{
+    "students": [
+        {
+            "student_id": "3",
+            "name": "The rock",
+            "email": "therock@gmail.com",
+            "phone": "982738978989",
+            "course": "BCA",
+            "year": 4,
+            "grades": {}
+        }
+    ],
+    "saved_at": "2026-07-24T13:46:23.182223"
+}
